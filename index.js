@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
    res.json({
       message: "Welcome to our API",
       cohort: process.env.COHORT,
+      secret: process.env.SUPER_SECRET_API_KEY,
    });
 });
 
